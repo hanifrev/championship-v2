@@ -8,7 +8,9 @@ const Navbar = ({ customClass }) => {
     return (
         <div className={`flex flex-row justify-between py-2 md:py-3 px-4 sm:px-12 md:px-16 lg:px-32 xl:px-96 text-white bg-navbar text-base ${customClass}`} style={{ fontFamily: ['Ubuntu', 'sans-serif'], }}>
             <div>
-                Logo
+               <Link href="/">
+                    Logo
+                </Link>
             </div>
             
             {/* mobile nav */}
@@ -30,7 +32,7 @@ const Navbar = ({ customClass }) => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="#">
+                    <Link href="/Stats">
                         Stats
                     </Link>
                 </li>

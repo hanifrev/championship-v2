@@ -4,7 +4,7 @@
 
 @layer base {
   .main-container {
-    @apply px-9 sm:px-16 md:px-11 lg:px-0 w-full mx-auto overflow-hidden  max-w-screen-lg
+    @apply px-6 sm:px-16 md:px-11 lg:px-0 w-full mx-auto overflow-hidden  max-w-screen-lg
   }
 }
 

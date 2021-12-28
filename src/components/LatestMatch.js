@@ -66,8 +66,8 @@ const LatestMatch = () => {
 
 
     return (
-        <div className="border-2 rounded-md w-full md:w-8/12 mx-auto pb-2 sm:px-2">
-            <h3 className="text-center font-semibold text-base sm:text-lg">Latest Match</h3>
+        <div className="border-2 rounded-md w-full md:w-8/12 mx-auto pb-2 sm:px-0 bg-slate-100">
+            <h3 className="text-center font-semibold text-base sm:text-lg bg-slate-400 rounded-md">Latest Match</h3>
             <p className="text-center pb-4 text-sm sm:text-base">Matchday {cmd}</p>
             <div>
                 {}
@@ -75,20 +75,20 @@ const LatestMatch = () => {
                     <thead>
                         <tr>
                         <th></th>
-                        <th></th>
+                        <th className="w-6 sm:w-10"></th>
                         <th></th>
                         </tr>
                     </thead>
-                    <tbody className="text-xs sm:text-base">
+                    <tbody className="text-xss sm:text-base">
                         {
                             loading ? (
                                 <h6>Loading data . . . </h6>
                             ) : (
                                 lastMatch.filter((md) => md.matchday === theMD).map((x) =>(
                                     <tr key={x.id}>
-                                        <td className="text-left pb-1">{x.homeTeam.name}</td>
+                                        <td className="text-left pb-1 pl-3">{x.homeTeam.name}</td>
                                         <td className="text-center">{x.score.fullTime.homeTeam}-{x.score.fullTime.awayTeam}</td>
-                                        <td className="text-right">{x.awayTeam.name}</td>
+                                        <td className="text-right pr-3">{x.awayTeam.name}</td>
                                     </tr>
                                 ))
                             )

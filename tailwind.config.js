@@ -10,6 +10,10 @@ module.exports = {
         lg: "1170px",
         xl: "1920px",
       },
+      fontSize: {
+        xxs: '10px',
+        xss: '11px'
+      },
      },
   },
   variants: {
