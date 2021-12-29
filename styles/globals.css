@@ -25,3 +25,14 @@
   background-color: rgba(0, 0, 0, 0.8);
   color: white
 }
+
+.bg-stadium {
+  background-image: url('https://i2-prod.getreading.co.uk/incoming/article18965762.ece/ALTERNATES/s1200c/0_Reading-v-Barnsley-Sky-Bet-Championship.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-opac {
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -82,7 +82,7 @@ const LatestMatch = () => {
                     <tbody className="text-xss sm:text-base">
                         {
                             loading ? (
-                                <h6>Loading data . . . </h6>
+                                <p className="text-center mx-auto">Loading data . . . </p>
                             ) : (
                                 lastMatch.filter((md) => md.matchday === theMD).map((x) =>(
                                     <tr key={x.id}>
@@ -94,10 +94,10 @@ const LatestMatch = () => {
                             )
                         }
                         {hasError && (
-                            <h6 className="loadings">
+                            <p className="text-center mx-auto">
                             An error occurred while fetching data, data cannot be loaded, please come
                             back later
-                            </h6>
+                            </p>
                         )}
                     </tbody>
                 </table>

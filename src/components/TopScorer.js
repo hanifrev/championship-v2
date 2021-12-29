@@ -26,12 +26,12 @@ const TopScorer = () => {
             const jsonData = await response.json()
             const info = jsonData
             const topsc = info.scorers
-            // console.log(topsc)
-            // console.log(info.scorers.map((x)=> {
-            //     return (
-            //         x.numberOfGoals
-            //     )
-            // }))
+            console.log(info)
+            console.log(info.scorers.map((x)=> {
+                return (
+                    x.team.id
+                )
+            }))
 
             setTopScore(topsc)
             setLoading(false)
@@ -42,16 +42,16 @@ const TopScorer = () => {
     }
 
     return (
-        <div>
+        <div className="text-xs sm:text-base">
             {
                 loading ? (
-                    <p className="text-center mx-auto">Loading data . . .</p>
+                    <p className="text-center mx-auto text-slate-100">Loading data . . .</p>
                 ) : (
                     topScore.map((x, id) => {
                         return(
                         <div key={id} className="flex flex-row py-2 mx-auto w-11/12 sm:w-7/12 md:w-2/5 justify-between border-2 my-2 px-2 rounded-md bg-slate-100">
                             <div>
-                                <p className="font-semibold">{x.player.name}</p>
+                                <p className="font-semibold pb-1">{x.player.name}</p>
                                 <p>{x.team.name}</p>
                             </div>
                             <div className="flex items-center">
@@ -62,6 +62,12 @@ const TopScorer = () => {
                     })
                 )
             }
+            {hasError && (
+                <p className="text-center mx-auto text-slate-100">
+                An error occurred while fetching data, data cannot be loaded, please come
+                back later
+                </p>
+            )}
         </div>
     )
 }

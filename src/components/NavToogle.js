@@ -6,6 +6,11 @@ const NavToogle = ({ onClose }) => {
     return (
             <div className="list-none toogle" style={{ fontFamily: ['Ubuntu', 'sans-serif'], }}>
                 <li className="mx-auto pb-4">
+                    <Link href="/">
+                        Home
+                    </Link>
+                </li>
+                <li className="mx-auto pb-4">
                     <Link href="#">
                         Teams
                     </Link>
@@ -16,11 +21,11 @@ const NavToogle = ({ onClose }) => {
                     </Link>
                 </li>
                 <li className="mx-auto pb-4">
-                    <Link href="#">
+                    <Link href="/Stats">
                         Stats
                     </Link>
                 </li>
-                <button onClick={onClose} className="border px-2 py-1 rounded-md active:bg-red-500">close</button>
+                <button onClick={onClose} className="border px-2 py-1 rounded-md bg-slate-800 active:bg-red-500">C L O S E</button>
             </div>
     )
 }
