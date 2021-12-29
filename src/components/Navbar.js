@@ -22,7 +22,7 @@ const Navbar = ({ customClass }) => {
             {show && <NavToogle onClose={()=> setShow(!show)} />}
 
             {/* desktop nav */}
-            <div className="list-none hidden md:flex justify-evenly w-4/12 items-center">
+            <div className="list-none hidden md:flex justify-evenly w-4/12 items-center font-bold">
                 <li>
                     <Link href="/Teams">
                         Teams

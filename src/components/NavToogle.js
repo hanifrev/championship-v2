@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NavToogle = ({ onClose }) => {
 
     return (
-            <div className="list-none toogle" style={{ fontFamily: ['Ubuntu', 'sans-serif'], }}>
+            <div className="list-none toogle font-bold" style={{ fontFamily: ['Ubuntu', 'sans-serif'], }}>
                 <li className="mx-auto pb-4">
                     <Link href="/">
                         Home
