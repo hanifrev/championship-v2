@@ -11,12 +11,12 @@ const NavToogle = ({ onClose }) => {
                     </Link>
                 </li>
                 <li className="mx-auto pb-4">
-                    <Link href="#">
+                    <Link href="/Teams">
                         Teams
                     </Link>
                 </li>
                 <li className="mx-auto pb-4">
-                    <Link href="#">
+                    <Link href="/Standings">
                         Standings
                     </Link>
                 </li>

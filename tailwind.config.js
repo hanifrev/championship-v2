@@ -14,6 +14,9 @@ module.exports = {
         xxs: '10px',
         xss: '11px'
       },
+      width: {
+        "5%": '5%'
+      }
      },
   },
   variants: {
