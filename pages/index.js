@@ -3,7 +3,11 @@ import Image from 'next/image'
 import Test from '../src/components/Test'
 import Main from '../src/components/Main'
 
+console.log(process.env.THE_API_KEY)
+
 export default function Home() {
+  const API_KEY = `${process.env.THE_API_KEY}`
+  console.log(API_KEY)
   return (
     <div className="">
       <Head>

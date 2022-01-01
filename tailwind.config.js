@@ -15,7 +15,8 @@ module.exports = {
         xss: '11px'
       },
       width: {
-        "5%": '5%'
+        "5%": '5%',
+        "33rem": '33rem'
       }
      },
   },

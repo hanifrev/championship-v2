@@ -26,7 +26,7 @@ const Test = () => {
             const response = await fetch(ENDPOINT_MATCH, options)
             const jsonData = await response.json()
             const info = jsonData
-            console.log(info)
+            // console.log(info)
 
             setLastMatch(info)
             setLoading(false)
