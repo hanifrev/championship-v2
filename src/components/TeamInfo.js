@@ -49,10 +49,10 @@ const TeamInfo = () => {
                     displayTeam.map((x) => {
                         return (
                             <div key={x.id}>
-                                <div className="mx-auto bg-white w-96 lg:w-33rem my-4 rounded-md">
+                                <div className="mx-auto bg-white w-80 sm:w-96 lg:w-33rem my-4 rounded-md">
                                     <div  className="flex flex-row py-4 ">
                                         <div className="flex items-center pl-4">
-                                            <img src={x.crestUrl.replace(/^http:\/\//i, 'https://')} className="w-20" />
+                                            <img src={x.crestUrl.replace(/^http:\/\//i, 'https://')} className="w-16 sm:w-20" />
                                         </div>
                                         <div className="pl-5">
                                             <p className="font-bold">{x.name}</p>
