@@ -50,11 +50,11 @@ const Detail = ({id}) => {
       }  
 
     return (
-        <div className="bg-stadium">
+        <div style={{ fontFamily: ['Ubuntu', 'sans-serif'], }} className="bg-stadium">
             <Head>
                 <title>{clName} | The Championship </title>
             </Head>
-            <div className="bg-opac">
+            <div style={{ fontFamily: ['Ubuntu', 'sans-serif'], }} className="bg-opac">
                 <Navbar />
                 <div className="mx-auto text-center font-bold text-lg sm:text-xl md:text-3xl pt-3 pb-5 text-white">{clName}</div>
                 <div>

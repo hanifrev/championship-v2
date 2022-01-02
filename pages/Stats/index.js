@@ -6,11 +6,11 @@ import Head from 'next/head'
 
 const index = () => {
     return (
-        <div className="bg-stadium">
+        <div style={{ fontFamily: ['Ubuntu', 'sans-serif'], }} className="bg-stadium">
             <Head>
                 <title>The Championship | Top Scorer</title>
             </Head>
-            <div className="bg-opac">
+            <div style={{ fontFamily: ['Ubuntu', 'sans-serif'], }} className="bg-opac">
                 <Navbar />
                 <div className="mx-auto text-center font-bold text-lg sm:text-xl md:text-4xl py-3 text-slate-100">Top Scorer</div>
                 <TopScorer />
