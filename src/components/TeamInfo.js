@@ -44,7 +44,7 @@ const TeamInfo = () => {
         <div>
             <div>
                 {loading ? (
-                    <p>Loading Data . . .</p>
+                    <p className="text-center mx-auto text-white">Loading Data . . .</p>
                 ) : (
                     displayTeam.map((x) => {
                         return (
@@ -57,9 +57,9 @@ const TeamInfo = () => {
                                         <div className="pl-5">
                                             <p className="font-bold">{x.name}</p>
                                             <p>{x.venue}</p>
-                                            <Link href={x.website}><p className="text-blue-700">{x.website}</p></Link>
+                                            <a href={x.website} target='_blank' rel="noreferrer"><p className="text-blue-700">{x.website}</p></a>
                                             <div className="pt-2 font-semibold text-sm">
-                                                <Link href="https://google.com"><p className="text-pink-600">TEAM INFO</p></Link>
+                                                <a href={`/TeamDetail?id=${x.id}`}><p className="text-pink-600">TEAM INFO</p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ const TeamInfo = () => {
                     })
                 )}
                 {hasError && (
-                    <p className="">
+                    <p className="text-center mx-auto text-white">
                         An error occurred while fetching data, data cannot be loaded, please come back
                         later
                     </p>

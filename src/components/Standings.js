@@ -90,7 +90,7 @@ const Standings = () => {
                             )
                         }
                         {hasError && (
-                            <p className="text-center mx-auto">
+                            <p className="text-center mx-auto text-white">
                             An error occurred while fetching data, data cannot be loaded, please come
                             back later
                             </p>
