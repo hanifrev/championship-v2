@@ -32,7 +32,7 @@ const TeamInfo = () => {
             const jsonData = await response.json()
       
             const info = jsonData.teams
-            console.log(info[9])
+            // console.log(info[9])
             setDisplayTeam(info)
             setLoading(false)
           } catch (error) {

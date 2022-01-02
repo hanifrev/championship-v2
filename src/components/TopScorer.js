@@ -26,12 +26,12 @@ const TopScorer = () => {
             const jsonData = await response.json()
             const info = jsonData
             const topsc = info.scorers
-            console.log(info)
-            console.log(info.scorers.map((x)=> {
-                return (
-                    x.team.id
-                )
-            }))
+            // console.log(info)
+            // console.log(info.scorers.map((x)=> {
+            //     return (
+            //         x.team.id
+            //     )
+            // }))
 
             setTopScore(topsc)
             setLoading(false)
